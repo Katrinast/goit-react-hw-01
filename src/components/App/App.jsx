@@ -1,9 +1,10 @@
 import { username, tag, location, avatar, stats } from '../../userData.json';
-// import friends from '../../friends.json'
+import friends from '../../friends.json';
 
 import Profile from '../Profile/Profile';
+import FriendList from '../FriendList/FriendList';
 
-const App = () => {
+export default function App() {
   return (
     <>
       <Profile
@@ -17,6 +18,5 @@ const App = () => {
       <FriendList friends={friends} />
     </>
   );
-};
+}
 
-export default App;
